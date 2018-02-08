@@ -1,0 +1,23 @@
+/* begin floating chat widget */
+	@media (max-width: 500px) {
+		.s-lch-widget-float { /* libchat does some stupid repositioning that isn't necessary and also breaks things, this fixes them */
+			left: auto !important;
+			width: auto !important;
+		}
+	}
+	.s-lch-widget-float.open { /* additional sizing styles to ensure the chat widget doesn't cover anything important */
+		top: initial !important;
+		height: calc(100% - 49px) !important;
+		max-height: 500px !important;
+	}
+	.s-lch-widget-float { /* prevent chat widget from covering stuff */
+		pointer-events: none;
+		z-index: 10001 !important;
+	}
+	.s-lch-widget-float-btn, .s-lch-widget-float-load { /* prevent chat widget from covering stuff */
+		pointer-events: all;
+	}
+	.s-lch-widget-float-btn { /* show a pointer when mouse over chat button */
+		cursor: pointer;
+	}
+/* end floating chat widget */

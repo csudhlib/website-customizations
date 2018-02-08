@@ -1,0 +1,65 @@
+//All Pages
+<!-- dropdown navigation and top-right links -->
+<link rel="stylesheet" href="/Assets/CSUDH-Sites/Library/code/css/navigation.css" type="text/css" media="all">
+
+<!-- floating chat widget -->
+<link rel="stylesheet" href="/Assets/CSUDH-Sites/Library/code/css/chatwidget.css" type="text/css" media="all">
+<script type="text/javascript" src="/Assets/CSUDH-Sites/Library/code/js/chatwidget.js"></script>
+
+<!-- template modifications -->
+<link rel="stylesheet" href="/Assets/CSUDH-Sites/Library/code/css/templatemods.css" type="text/css" media="all">
+<script type="text/javascript" src="/Assets/CSUDH-Sites/Library/code/js/templatemods.js"></script>
+
+<!-- analytic tracking code -->
+<script type="text/javascript" src="/Assets/CSUDH-Sites/Library/code/js/analytics.js"></script>
+
+
+
+//Landing Pages
+<!-- landing page modifications -->
+<script type="text/javascript" src="/Assets/CSUDH-Sites/Library/code/js/landingmods.js"></script>
+
+
+
+//Home Page
+<!-- onesearch search box -->
+<link rel="stylesheet" href="/Assets/CSUDH-Sites/Library/code/css/onesearchbox.css" type="text/css" media="all">
+<script type="text/javascript" src="/Assets/CSUDH-Sites/Library/code/js/onesearchbox.js"></script>
+
+<!-- today hours widget -->
+<link rel="stylesheet" href="/Assets/CSUDH-Sites/Library/code/css/hourswidget.css" type="text/css" media="all">
+<script type="text/javascript" src="/Assets/CSUDH-Sites/Library/code/js/hourswidget.js"></script>
+
+<!-- message box -->
+<link rel="stylesheet" href="/Assets/CSUDH-Sites/Library/code/css/messagebox.css" type="text/css" media="all">
+<script type="text/javascript" src="/Assets/CSUDH-Sites/Library/code/js/messagebox.js"></script>
+
+<!-- faq widget, also styles the popular links box (need to fix that! -->
+<script src="//api2.libanswers.com/1.0/widgets/4937"></script>
+
+
+
+//Mobile Pages
+<!-- mobile navigation menu -->
+<link rel="stylesheet" href="/Assets/CSUDH-Sites/Library/code/css/meanmenucustom.css" type="text/css" media="all">
+<script type="text/javascript" src="/Assets/CSUDH-Sites/Library/code/js/meanmenu.js"></script>
+<script type="text/javascript" src="/Assets/CSUDH-Sites/Library/code/js/meanmenucustom.js"></script>
+
+
+
+//Slider Pages
+<!-- slider widget -->
+<link rel="stylesheet" href="/Assets/CSUDH-Sites/Library/code/css/unslidercustom.css" type="text/css" media="all">
+<script type="text/javascript" src="/Assets/CSUDH-Sites/Library/code/js/jquery.event.move.js"></script>
+<script type="text/javascript" src="/Assets/CSUDH-Sites/Library/code/js/jquery.event.swipe.js"></script>
+<script type="text/javascript" src="/Assets/CSUDH-Sites/Library/code/js/unslider.js"></script>
+<script type="text/javascript" src="/Assets/CSUDH-Sites/Library/code/js/unslidercustom.js"></script>
+
+
+
+//Table Pages
+<!-- sorting table widget -->
+<link rel="stylesheet" href="/Assets/CSUDH-Sites/Library/code/css/tablesorter-theme.materialize.min.css" type="text/css" media="all">
+<script type="text/javascript" src="/Assets/CSUDH-Sites/Library/code/js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="/Assets/CSUDH-Sites/Library/code/js/jquery.tablesorter.widgets.min.js"></script>
+<script type="text/javascript" src="/Assets/CSUDH-Sites/Library/code/js/tablesortercustom.js"></script>

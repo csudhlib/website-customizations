@@ -1,0 +1,80 @@
+/* begin message box */
+	/* These are styling classes for different types of message boxes */
+	.msg_clean { /* grey */
+		background-color: #efefef;
+		position: relative;
+		border: 2px solid #dedede;
+		width: auto;
+		height: auto;
+		border-radius: 5px;
+		padding: 10px;
+	}
+
+	.msg_info { /* blue */
+		background-color: #e6eff9;
+		position: relative;
+		border: 2px solid #b5d3ff;
+		width: auto;
+		height: auto;
+		border-radius: 5px;
+		padding: 10px;
+	}
+
+	.msg_ok { /* green */
+		background-color: #d7f7c4;
+		position: relative;
+		border: 2px solid #82cb2f;
+		width: auto;
+		height: auto;
+		border-radius: 5px;
+		padding: 10px;
+	}
+
+	.msg_alert { /* yellow */
+		background-color: #fef5be;
+		position: relative;
+		border: 2px solid #fdd425;
+		width: auto;
+		height: auto;
+		border-radius: 5px;
+		padding: 10px;
+	}
+
+	.msg_error { /* red */
+		background-color: #ffcdd1;
+		position: relative;
+		border: 2px solid #e10c0c;
+		width: auto;
+		height: auto;
+		border-radius: 5px;
+		padding: 10px;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	.no_background_color {
+		background-color: initial !important;
+	}
+
+	.msg_base {
+		margin: 0px auto 25px !important;
+		border-width: 3px !important;
+		text-align: center;
+		width: 90%;
+	}
+
+	.msg_base h1 {
+		font-size: 1.5em;
+	}
+
+	.msg_base h2 {
+		font-size: .95em;
+	}
+
+	.msg_base p {
+		font-size: 1em;
+		margin:10px auto !important;
+	}
+/* end message box */

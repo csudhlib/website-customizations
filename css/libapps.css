@@ -1,0 +1,284 @@
+@import url('//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300italic,600italic,400,300,600,700');
+
+html, body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
+#wrapper, #doc3, #s-lc-public-cust-header {
+	min-height:100%;
+	position:relative;
+}
+
+#home-background-container, #bd {
+	padding-bottom:300px !important;
+}
+
+#ft {
+	margin: auto; 
+	position:absolute;
+	bottom:0;
+	left: 0; 
+	right: 0; 
+}
+
+#s-lg-public-skiplink, #s-lc-public-skiplink, #s-la-public-skiplink, .hidden {
+	display:none;
+}
+
+/* begin libguides specific, most of this still carries over to other libapps */
+	body {
+		text-rendering: optimizeLegibility;
+		font-family: Arial, Helvetica, sans-serif;
+		color: #414042;
+		font-size: 16px;
+	}
+
+	.s-lib-featured-profile-image img {
+		width: auto !important;
+		min-height: 134px !important;
+		max-height: 175px !important;
+		margin: 0px auto !important;
+		display: block !important;
+		max-width: 100% !important;
+	}
+
+	/* begin fonts */
+		a, .btn-link {
+			color: #860038;
+			text-decoration: none;
+			outline: none;
+		}
+		a:hover, a:focus, .btn-link:hover, .btn-link:focus, .btn-link.bold {
+			color: #F0A901;
+			text-decoration: none;
+			outline: none;
+		}
+	/* end fonts */
+
+	/* begin az */
+		#s-lg-az-index {
+			text-align: center;
+		}
+
+		#s-lg-az-index .btn-link {
+			font-size: 20px;
+			font-weight: bold;
+			padding: 5px 5px !important;
+		}
+
+		#s-lg-az-index .btn-link:disabled {
+			font-weight: normal;
+		}
+
+		@media (min-width: 992px) {
+			#s-lg-az-filter-cols .col-md-3 {
+				width: 33% !important;
+			}
+		}
+
+		#s-lg-az-filter-cols .col-md-3 select {
+			margin-bottom: 15px !important;
+		}
+
+		#col-vendors, #col-search {
+			display: none;
+		}
+
+		.s-lg-az-result-badge-featured {
+			display: none;
+		}
+
+		.s-lg-az-result-badge-trial {
+			background-color: #F0A901;
+		}
+
+		.s-lg-az-result-badge-new {
+			background-color: #860038;
+		}
+	/* end az */
+
+	/* begin buttons */
+		.btn-info, .btn-info.active, .btn-info.focus, .btn-info:active, .btn-info:focus, .btn-info:hover, .open > .dropdown-toggle.btn-info {
+			background-color: #860038;
+			border-color: #860038;
+			color: #F0A901;
+			font-weight: bold;
+		}
+
+		.btn-info:hover {
+			background-color: #F0A901;
+			color: #860038;
+		}
+
+		.nav-pills > li > a:focus, .nav-pills > li > a:hover {
+			background-color: #F0A901;
+			border-color: #860038;
+			color: #860038;
+			outline: none;
+		}
+
+		.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+			background-color: #860038;
+			color: #F0A901;
+			font-weight: bold;
+			outline: none;
+		}
+	/* end buttons */
+/* end libguides specific */
+
+
+/* begin footer */
+	#footer {
+		height: 300px;
+		width: 940px;
+		padding: 0 20px 20px 20px;
+		margin: auto; 
+		background: url(//www.csudh.edu/web_resources/themes/CSUDH-Main/img/background-footer.jpg) no-repeat center bottom;
+	}
+
+	#footer h1 {
+		background: none;
+		font-size: 32px;
+		padding: 0;
+		margin: 0;
+		color: #000;
+		font-weight: 400;
+		line-height: 1.2em;
+		text-transform: uppercase;
+		border-radius: 4px;
+		font-family: 'Open Sans', sans-serif;
+	}
+
+	#footer p {
+		font-size: 14.4px;
+		padding: 10px 0 0 0;
+		margin-right: 14px;
+		line-height: 1.4em;
+		margin-top: 0px;
+		font-family: 'Open Sans', sans-serif;
+	}
+
+	#footer  a{
+		color: #000;
+		text-decoration: none;
+		font-family: 'Open Sans', sans-serif;
+	}
+
+	#footer-header {
+		height: 79px;
+		width: 978px;
+		margin: 10px 0 0;
+		display: block;
+		float: left;
+	}
+
+	#footer-links ol {
+		float: left;
+		list-style-type: none;
+		margin: auto;
+		padding: 0;
+		list-style-position: outside;
+	}
+
+	#footer-links ol li {
+		float: left;
+		width: 300px;
+		font-size: 15.2px;
+		font-weight: 400;
+		text-transform: uppercase;
+		margin-left: -10px;
+		line-height: 1.4em;
+	}
+
+	#footer-links ol li:hover {
+		background: #850038;
+		border-radius: 14px;
+	}
+
+	#footer-links ol li a {
+		display: block;
+		padding-top: 4px;
+		padding-bottom: 4px;
+		padding-left: 10px;
+	}
+
+	#footer-links ol li a:hover {
+		color: #fff;
+	}
+
+	#link-hover-bd a:hover {	
+		color: #850038 !important;
+	}
+
+	.col {
+		display: block;
+		float: left;
+		margin: 1% 0 0.5% 1.6%;
+		text-decoration: none;
+		width: 32.2%;
+	}
+
+	.col:first-child {
+		margin-left: 0 !important;
+	}
+
+	/* begin footer responsive fix */
+		@media (max-width: 1020px) {
+			#footer {
+				height: 330px;
+				width: auto;
+			}
+
+			#footer-header {
+				height: auto;
+				width: auto;
+			}
+
+			#s-lg-index-cols {
+				margin-right: 0;
+				margin-left: 0;
+			}
+		}
+
+		@media (max-width: 900px) {
+			#footer-links ol li {
+				float: none;
+				width: auto;
+			}
+
+			#s-lib-scroll-top {
+				z-index: 1;
+			}
+
+			#home-background-container, #bd {
+				padding-bottom: 350px !important;
+			}
+		}
+
+		@media (max-width: 600px) {
+			#home-background-container, #bd {
+				padding-bottom: 400px !important;
+			}
+		}
+
+		@media (max-width: 502px) {
+			#home-background-container, #bd {
+				padding-bottom: 440px !important;
+			}
+		}
+
+		@media (max-width: 470px) {
+			#home-background-container, #bd {
+				padding-bottom: 490px !important;
+			}
+		}
+
+		@media (max-width: 436px) {
+			#home-background-container, #bd {
+				padding-bottom: 520px !important;
+			}
+		}
+	/* end footer responsive fix */
+/* end footer */

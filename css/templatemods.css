@@ -1,0 +1,178 @@
+/* because campus IT hasn't updated their copy */
+@import url('//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300italic,600italic,400,300,600,700');
+
+/* begin general template modifications */
+	@import url('//use.fontawesome.com/ff5c64af7d.css');
+	/* fix the padding issue */
+	.contentspacing {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+
+	/* fix the header content boxes so they don't wrap around */
+	.contentspacing .span_1_of_3 {
+		margin-left: 2% !important;
+		min-height: 275px;
+		padding-right: 5px !important;
+		width: 30.4% !important;
+	}
+
+	.contentspacing .span_1_of_2 {
+		width: 47.6%;
+		min-height: 210px;
+	}
+
+	/* extra space below footer to prevent chat widget from obscuring content */
+	.hspan_12 {
+		border-bottom-width: 35px;
+	}
+
+	/* center the section header images */
+	.audiences.span_1_of_3 img {
+		display: block;
+	}
+
+	.audiences.span_1_of_2 img {
+		display: block;
+	}
+
+	/* styling for audiences header icons */
+	.audiences h1 .fa {
+		float: right;
+		margin: 2px 10px;
+	}
+
+	/* modified styling for audiences header */
+	.audiences h1 {
+		font-size: 19px !important;
+		margin-bottom: 0px;
+	}
+
+	.audiences h1.center {
+		text-align: center;
+		padding-left: 0px;
+	}
+
+	/* styling for landing header icons */
+	.landing h1 .fa {
+		color: #000;
+		font-size: 32px;
+		margin: 4px 4px 0 2px;
+	}
+
+	.landing h1:hover .fa {
+		color: #fff;
+	}
+
+	/* modified styling for landing header */
+	.landing{
+		margin-left: 2% !important;
+	}
+
+	.landing h1 {
+		display: flex !important;
+	}
+
+	.landing h1:hover {
+		background-color: #860038 !important;
+		color: #fff !important;
+	}
+
+	.landing h1 a {
+		display: flex;
+		font-size: 20px !important;
+		width: 100%;
+	}
+
+	.landing h1:hover a {
+		color: #fff !important;
+		text-decoration: none;
+	}
+
+	.landingmessageheader {
+		display: table;
+		height: 410px;
+		padding-bottom: 26px;
+		padding-left: 26px;
+		padding-top: 0;
+	}
+
+	.audiences.list ul {
+		list-style: none;
+		border: 1px solid #ccc;
+		padding: 5px 0px 10px 10px !important;
+		margin: 0;
+		min-height: 190px;
+	}
+	.audiences.list ul li {
+		border-bottom: 0px;
+		padding-top: 10px;
+		padding-bottom: 15px;
+	}
+	.audiences.list ul li a {
+		color: #337ab7;
+		text-decoration: none;
+		font-size: 18px;
+		font-weight: 400;
+	}
+
+	.landingmessageheader > div.rxbodyfield {
+		display: table-cell; /* Necessary for vert-align to work on nested block elements */
+		vertical-align: bottom; /* As more lines are typed, the content builds UP */
+	}
+
+	/* move ul lists over so they arent sitting on the border */
+	ul {
+		padding-left: 35px !important;
+	}
+
+	ul.list-unstyled {
+		padding-left: 0 !important;
+	}
+
+	/* add a transparent-to-black gradient so the white text is more readable on the landing page header images */
+	.backgroundreplacement .rxbodyfield:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 550px;
+		display: inline-block;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+55,0.25+100 */
+		background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.25) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 55%,rgba(0,0,0,0.25) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 55%,rgba(0,0,0,0.25) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#40000000',GradientType=0 ); /* IE6-9 */
+	}
+
+	.backgroundreplacement .rxbodyfield {
+		position: relative;
+		display: inline-block;
+	}
+
+	#logo:after {
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+50,ffffff+85,ffffff+100&1+0,0.7+50,0.25+85,0+100 */
+		background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0.7) 50%, rgba(255,255,255,0.25) 85%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0.7) 50%,rgba(255,255,255,0.25) 85%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0.7) 50%,rgba(255,255,255,0.25) 85%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		content: '';
+		display: inline-block;
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+		height: 38px;
+		left: 0;
+		padding: 5px;
+		position: absolute;
+		top: -5px;
+		width: 360px;
+		z-index: -1;
+	}
+
+	#logo {
+		display: inline-block;
+		position: relative;
+	}
+	table td {
+		color: #000;
+	}
+/* end general template modifications */

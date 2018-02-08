@@ -1,0 +1,243 @@
+/* begin dropdown navigation */
+	div#contentspacing ul li:first-child, div#contentspacing ul li {
+		padding-left: 0px !important;
+		margin-left: 0px !important;
+		margin-bottom: 0px !important;
+		margin-top: 0px !important;
+	}
+	#nav {
+		margin-top: 20px;
+		margin-bottom: 5px;
+	}
+	#nav ul ul {
+		display: none;
+	}
+	#nav ul li:hover > ul {
+		display: block;
+	}
+	#nav ul {
+		background: #860038;
+		padding-left: 10px !important;
+		list-style: none;
+		position: relative;
+		margin: auto !important;
+		list-style-position: outside;
+		z-index:9;
+	}
+	#nav ul:after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+	#nav ul li {
+		float: left;
+		line-height: 20.16px !important;
+		font-family: 'Open Sans', sans-serif !important;
+		max-height: 54px;
+		min-height: 54px;
+		-webkit-transition: background-color .1s ease-in-out;
+		-moz-transition: background-color .1s ease-in-out;
+		-o-transition: background-color .1s ease-in-out;
+		transition: background-color .1s ease-in-out;
+		list-style-type: none;
+	}
+	#nav ul li li {
+		max-height: 62px;
+		min-height: 42px;
+	}
+	#nav ul li a {
+		display: block;
+		text-decoration: none;
+		font-size: 14.4px !important;
+		font-weight: 600 !important;
+		text-transform: uppercase;
+		padding: 16px 0 18px 15px !important;
+	}
+	#nav ul ul {
+		position: absolute;
+		top: 100%;
+		background: #860038;
+		list-style: none;
+		list-style-position: outside;
+		min-width: 250px;
+		width: auto;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		padding: 0 !important;
+		margin-top: -6px !important; 
+		border: 1px;
+		height: 0px;
+	}
+	#nav ul ul li {
+		float: none;
+		position: relative;
+	}
+	#nav ul ul li a {
+		padding: 12px 16px !important;
+		font-size: 14.4px !important;
+	}
+	#nav ul ul ul {
+		position: absolute;
+		left: 100%;
+		top: 0;
+		margin-top: 0 !important; 
+	}
+	#nav ul li, #nav ul li:hover li, #nav ul li:hover li:hover li { /* change background-color for li elements, not a elements */
+		background-color: #860038;
+	}
+	#nav ul li:hover, #nav ul li:hover li:hover, #nav ul li:hover li:hover li:hover, #nav ul li.currentFix:hover, #nav ul li.currentFix.nav-level-4:hover, #nav ul li.currentFix.nav-level-4:hover li.currentFix.nav-level-5:hover { /* change hover background-color for li elements, not a elements */
+		background-color: #fff;
+	}
+	#nav ul li a, #nav ul li:hover li a, #nav ul li:hover li:hover li a { /* change color for a elements, ensure background is transparent */
+		background-color: transparent;
+		color: #fff;
+	}
+	#nav ul li:hover a, #nav ul li:hover li:hover a, #nav ul li:hover li:hover li:hover a, #nav ul li.currentFix > a, #nav ul li.currentFix.nav-level-4 > a, #nav ul li.currentFix.nav-level-5 > a, #nav ul li.currentFix.nav-level-4:hover li.currentFix.nav-level-5 > a, #nav ul li.currentFix:hover > a, #nav ul li.currentFix.nav-level-4:hover > a, #nav ul li.currentFix.nav-level-4:hover li.currentFix.nav-level-5:hover > a { /* change hover color for a elements */
+		color: #860038;
+	}
+	#nav ul li.currentFix, #nav ul li.currentFix.nav-level-4, #nav ul li.currentFix.nav-level-5, #nav ul li.currentFix.nav-level-4:hover li.currentFix.nav-level-5 { /* change color/background-color for the current active breadcrumb trail */
+		background-color: #f6d475;
+		color: #860038;
+	}
+	#nav ul li a.navfirst {
+		padding-right: 16px !important;
+	}
+	#nav ul li a:hover {
+		box-shadow: none !important;
+	}
+	/* begin dropdown arrow for top level navigation */
+		#nav ul li span.has-child {
+			cursor: default;
+			float: right;
+			margin-left: 5px;
+			padding: 16px 25px 18px 15px !important;
+			position: relative;
+			top: -16px;
+		}
+		#nav ul li span.has-child:after { 
+			content: '\25BC';
+		}
+	/* end dropdown arrow for top level navigation */
+	/* begin dropdown arrow for lower level navigation */
+		#nav ul li ul li span.has-child { 
+			cursor: default;
+			float: right;
+			margin-left: 20px;
+			padding: 12px 16px !important;
+			position: relative;
+			top: -12px;
+			right: -16px;
+		}
+		#nav ul li ul li span.has-child:after {
+			content: '\25BA';
+		}
+	/* end dropdown arrow for lower level navigation */
+	/* begin hide 4th-tier menu */
+		#nav .nav-level-5 .has-child:after {
+			content: '' !important;
+		}
+		#nav .nav-level-5 ul, .nav-level-5:hover ul {
+			visibility: hidden !important;
+			display: none !important;
+		}
+	/* end hide 4th-tier menu, usually ends up off screen */
+	@media only screen and (max-width: 768px) {  
+		/* give more space on small screens to press the dropdown arrow */
+		/* this should also not be needed anymore, except on the homepage, only because the homepage doesn't use the mobile menu */
+		#nav ul li span.has-child { /* dropdown arrow for top level navigation */
+			padding-right: 45px !important;
+		}
+		#nav ul li ul li span.has-child { /* dropdown arrow for lower level navigation */
+			margin-left: 45px;
+		}
+	}
+/* end dropdown navigation */
+/* begin vendor header emulation */
+	#header {
+		display: table;
+		width: 100%;
+		padding-top: 20px;
+	}
+	#logo {
+		float: left;
+		width: 206px;
+		padding-left: 25px;	
+	}
+	#audiencenav {
+		float: right;
+		list-style-type: none;
+		padding: 8px 6px 0 10px;
+		margin: auto;
+		list-style-position: outside;
+	}
+	#audiencenav li {
+		float: left;
+		padding: 0 2px;
+		font-size: .9em;
+		line-height: 1.4em;
+		font-family: 'Open Sans', sans-serif;
+	}
+	#audiencenav a {
+		text-decoration: none;
+		font-size: .8em;
+		font-weight: 500;
+		color: #fff;
+		background-color:#860038;
+		padding:3px 7px;
+		border-radius:3px;
+	}
+	#audiencenav a:hover, #audiencenav a:active {
+		background-color: #fff;
+		color: #860038;
+	}
+/* begin vendor header emulation */
+/* begin primo-override for regular dropdown */
+	prm-topbar {
+		min-height: 114px !important;
+		z-index: 10000 !important;
+	}
+	prm-user-area md-fab-toolbar ._md-fab-toolbar-wrapper {
+		max-height: 60px !important;
+	}
+	.top-nav-bar {
+		height: 60px !important;
+		min-height: 60px !important;
+	}
+/* end primo-override for regular dropdown */
+/* begin primo-override for mobile dropdown */
+	/* these zindex changes prevent the mobile menu from obstructing existing functionality */
+	md-toolbar.bottom-fixed-toolbar {
+		z-index: 10001 !important;
+	}
+	
+	prm-main-menu[menu-type=full] .close-button, .md-scroll-mask, .md-dialog-container, md-backdrop._md-dialog-backdrop, md-tooltip {/* move login window in front of menu and chat widget */
+		z-index: 10003 !important;
+	}
+	._md-select-menu-container, md-backdrop._md-select-backdrop, #prm-simple-search { /* prevent various elements from falling behind customizations */
+		z-index: 10004 !important;
+	}
+	/* these just make some minor visual changes, no repositioning is occuring */
+	.md-button.button-with-icon>prm-icon+span { /* remove unnecessary padding on buttons */
+		padding-right: 0;
+	}
+	.facet-to-left-spacer { /* fix advanced search from falling off the page */
+		display: none;
+	}
+	.md-fab-toolbar-wrapper md-toolbar {
+		pointer-events: inherit;
+	}
+	.md-fab-toolbar-wrapper md-toolbar .md-fab-action-item {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		transition-delay: 200ms;
+	}
+	.md-fab-toolbar-wrapper md-toolbar .md-fab-action-item md-input-container md-select:focus{
+		background-color: transparent;
+	}
+	prm-user-area, prm-search-bookmark-filter .md-button {
+		background-color: transparent;
+	}
+	prm-search-bookmark-filter .md-button:hover {
+		background-color: rgba(0,0,0,.1);
+	}
+/* end primo-override for mobile dropdown */

@@ -1,0 +1,98 @@
+/* begin onsearch search box */
+	#form-main-search {
+		padding: 50px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		border: 1px solid #000;
+		border-radius: 3px;
+		background-image: url(//www.csudh.edu/Assets/csudh-sites/library/images/onesearch/libraryheader.png);
+		padding-top: 150px;
+	}
+
+	#onesearch {
+		position: relative;
+		width: 100%;
+		font-size: 20px;
+	}
+
+	#onesearchbuttonoverlay {
+		background-color: #850038;
+		position: absolute;
+		right: 0;
+		top: 0;
+		margin-bottom: 0;
+	}
+
+	#onesearchbuttonoverlay .btn {
+		width: 54px;
+		height: 54px;
+		border-width: 0;
+		color: transparent;
+		background-color: transparent;
+		padding: 0;
+		margin: 0;
+		position: relative;
+		z-index: 2;
+		border-radius: 0px !important;
+	}
+
+	#onesearchbuttonoverlay:before {
+		font: normal normal normal 14px/1 FontAwesome;
+		content: "\f002";
+		top: 12px;
+		left: 14px;
+		font-size: 25px;
+		color: #F0A901;
+		position: absolute;
+	}
+
+	#onesearchwhich {
+		height: 54px;
+		padding: 5px 5px 5px 10px;
+		font-size: 20px;
+		width: 32.5%;
+		outline: 0;
+		margin-right: 20px;
+	}
+
+	#query {
+		height: 40px;
+		padding: 5px 35px 5px 15px;
+		font-size: 20px;
+		width: 57.5%;
+		outline: 0;
+	}
+
+	/* this is for the header stuff above the onesearch box, ie. "University Library/CSU Dominguez Hills" and the social media buttons */
+	#headercontainer {
+		position: absolute;
+		left: 0;
+		top: 30px;
+		color: #fff;
+		background: url(//www.csudh.edu/Assets/csudh-sites/library/images/onesearch/greyfadetowhite.png);
+		padding-right: 150px;
+	}
+
+	#headercontainer h1 {
+		margin-left: 15px;
+		color: #fff;
+		font-size: 2.5em;
+		margin-bottom: .05em;
+	}
+
+	#headercontainer h2 {
+		margin-left: 25px;
+		font-size: 1.5em;
+		color: #fff;
+	}
+
+	#socialmediacontainer {
+		position: absolute;
+		right: 15px;
+		top: 30px;
+	}
+
+	#socialmediacontainer img {
+		margin-right: 10px;;
+	}
+/* begin onsearch search box */

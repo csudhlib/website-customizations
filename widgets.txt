@@ -1,0 +1,17 @@
+<!-- hourswidget -->
+<div id="todayHoursWidget">&nbsp;</div>
+
+<!-- messagebox -->
+<div class="msg_alert hide msg_changes" id="alertcontainer">&nbsp;</div>
+
+<!-- unslider -->
+<div class="fading-slider">
+	<ul>
+		<li>
+			<div class="textHeader"><span>&nbsp;</span></div>
+			<div class="textBody"><span>&nbsp;</span></div>
+			<img title="" alt="" height="350" width="941" src="" />
+		</li>
+	</ul>
+</div>
+
